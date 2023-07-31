@@ -91,6 +91,7 @@ module.exports = {
               .join("\n")}\`\`\`\n\n\n`;
           }}
            formatted +=  `┕┉┉┉┉┉┉┉┉┉┉┉┉⊰\n\n`
+    }
 
           return formatted.trim();
         }
@@ -106,7 +107,7 @@ module.exports = {
           { quoted: m }
         );
 
-        
+        break;
       default:
         break;
     }
