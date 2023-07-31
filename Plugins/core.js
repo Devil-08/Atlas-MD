@@ -106,7 +106,7 @@ module.exports = {
           { quoted: m }
         );
 
-        break;
+        
       default:
         break;
     }
