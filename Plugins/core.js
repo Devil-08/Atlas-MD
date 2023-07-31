@@ -87,11 +87,10 @@ module.exports = {
             //formatted += `\`\`\`${commands.join("\n")}\`\`\`\n\n\n`;
             // Adding a - before each command
             formatted += `\`\`\`${commands
-              .map((cmd) => `┊✗   ${prefix + cmd}`)
+              .map((cmd) => `┊✗   ${prefix + cmd}`)                   
               .join("\n")}\`\`\`\n\n\n`;
-          }
-         
-          mess += `┕┉┉┉┉┉┉┉┉┉┉┉┉⊰\n\n`
+          }}
+           formatted +=  `┕┉┉┉┉┉┉┉┉┉┉┉┉⊰\n\n`
 
           return formatted.trim();
         }
