@@ -48,7 +48,7 @@ module.exports = {
       case "help":
       case "h":
       case "menu":
-        await doReact("☃️");
+        await doReact("🥵");
         await Atlas.sendPresenceUpdate("composing", m.from);
         function readUniqueCommands(dirPath) {
           const allCommands = [];
@@ -83,11 +83,11 @@ module.exports = {
               file.replace(".js", "").charAt(0).toUpperCase() +
               file.replace(".js", "").slice(1);
 
-            formatted += `╟   🏮 *${capitalizedFile}* 🏮   ╢\n\n`;
+            formatted += `┎┈┈┈❮ 🧣 *${capitalizedFile}* 🧣 ❯┈┈┈⟢\n`;
             //formatted += `\`\`\`${commands.join("\n")}\`\`\`\n\n\n`;
             // Adding a - before each command
             formatted += `\`\`\`${commands
-              .map((cmd) => `⥼   ${prefix + cmd}`)
+              .map((cmd) => `┊✗   ${prefix + cmd}`)
               .join("\n")}\`\`\`\n\n\n`;
           }
 
@@ -98,7 +98,7 @@ module.exports = {
 
         const allCommands = readUniqueCommands(pluginsDir);
         const formattedCommands = formatCommands(allCommands);
-        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team ATLAS- 2023*`;
+        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ 𝙱𝚢 𝚍𝚎𝚟𝚒𝚕 *`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
