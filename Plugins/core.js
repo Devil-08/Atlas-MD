@@ -90,6 +90,8 @@ module.exports = {
               .map((cmd) => `┊✗   ${prefix + cmd}`)
               .join("\n")}\`\`\`\n\n\n`;
           }
+         
+          mess += `┕┉┉┉┉┉┉┉┉┉┉┉┉⊰\n\n`
 
           return formatted.trim();
         }
