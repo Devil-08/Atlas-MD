@@ -88,7 +88,7 @@ module.exports = {
             // Adding a - before each command
             formatted += `\`\`\`${commands
               .map((cmd) => `┊✗   ${prefix + cmd}`)                   
-              .join("\n")}\`\`\`\n\n\n`;
+              .join("\n")}\`\`\``;
             formatted +=  `┕┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉⟢\n\n`
           }
           
