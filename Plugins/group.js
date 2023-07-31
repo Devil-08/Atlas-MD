@@ -698,16 +698,16 @@ module.exports = {
           message2 = "Check this Out !";
         }
 
-        let mess = `            『 *Attention Everybody* 』
+        let mess = ` ┎┉┉┉┉❬ *Attention Everybody* ❭┉┉┉┉┒
     
-*⚜️ Tagged by:* @${m.sender.split("@")[0]}
+*┊⚜️ Tagged by:* @${m.sender.split("@")[0]}
             
-*🧩 Message:* ${message2};
-│\n`;
+*┊🧩 Message:* ${message2};
+*┊*\n`;
         for (let mem of participants) {
-          mess += `┟ @${mem.id.split("@")[0]}\n`;
+          mess += `┊❧ @${mem.id.split("@")[0]}\n`;
         }
-        mess += `╰────────────⊰\n\n                    *Thank You*\n`;
+        mess += `┕┉┉┉┉┉┉┉┉┉┉┉┉⊰\n\n                    *Thank You*\n`;
 
         await doReact("〽️");
         Atlas.sendMessage(
